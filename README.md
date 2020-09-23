@@ -4,7 +4,7 @@ ELK stack project for secure log files
 Configuration files for filebeat, logstash, elasticsearch.   
 
 
-Secure log files => Pass them to filebeat => Pass output to logstash => Pass output to elasticsearch         
+## Secure log files => Pass them to filebeat => Pass output to logstash => Pass output to elasticsearch         
 
 
 ### Format of secure log files:     
