@@ -6,3 +6,5 @@ filebeat.inputs:
     - /root/dataset/secure/*
   tags: ["secure"]
 
+output.logstash:
+  hosts: ["http://localhost:5044"]
