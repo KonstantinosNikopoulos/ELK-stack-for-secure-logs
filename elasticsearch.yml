@@ -1,1 +1,9 @@
+# Path to directory where to store the data:
+path.data: /var/lib/elasticsearch
 
+# Path to log files:
+path.logs: /var/log/elasticsearch
+
+action.auto_create_index: .monitoring*,.watches,.triggered_watches,.watcher-history*,.ml*
+
+node.ingest: false
