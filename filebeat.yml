@@ -1,6 +1,9 @@
 # Run this with
 # sudo ./bin/filebeat -e -c filebeat.yml -d "publish"
 
+# For training you have to clean registry:
+# registry/filebeat/log.json
+
 filebeat.inputs:
 
 - type: log
