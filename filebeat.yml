@@ -1,0 +1,8 @@
+
+filebeat.inputs:
+
+- type: log
+  paths:
+    - /root/dataset/secure/*
+  tags: ["secure"]
+
