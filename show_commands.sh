@@ -6,8 +6,8 @@ echo "
 +---------------------------------------------------------------------------------------------
 | Start Elasticsearch     sudo systemctl start elasticsearch.service
 +---------------------------------------------------------------------------------------------
-| Start Filebeat          sudo ./bin/filebeat -e -c filebeat_test.yml -d "publish"
+| Start Filebeat          sudo ./bin/filebeat -e -c filebeat.yml -d "publish"
 +---------------------------------------------------------------------------------------------
-| Start Logstash          sudo bin/logstash -f first-pipeline.conf --config.reload.automatic
+| Start Logstash          sudo bin/logstash -f logstash.conf --config.reload.automatic
 +---------------------------------------------------------------------------------------------
 "
