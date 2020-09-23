@@ -1,5 +1,5 @@
 # ELK-stack-for-secure-logs
-ELK stack project for secure log files    
+ELK elastic stack project for secure log files    
 
 Configuration files for filebeat, logstash, elasticsearch.   
 
