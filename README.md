@@ -8,13 +8,11 @@ ELK stack from https://www.elastic.co/what-is/elk-stack
 This repo contains configuration files for filebeat, logstash, elasticsearch.   
 
 
-## Secure log files =>      
-## Pass them to filebeat =>       
-## Pass output to logstash =>       
-## Pass output to elasticsearch         
+### Secure log files =>      
+### Pass them to filebeat =>       
+### Pass output to logstash =>       
+### Pass output to elasticsearch         
 
-
-### Format of secure log files:     
 
 **Log file format**:    
 Feb 16 03:43:27 ns508880 sshd[25726]: Failed password for root from 49.88.112.112 port 47108 ssh2           
