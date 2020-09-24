@@ -11,4 +11,4 @@ filebeat.inputs:
   tags: ["secure"]
 
 output.logstash:
-  hosts: ["http://localhost:5044"]
+  hosts: ["localhost:5044"]
