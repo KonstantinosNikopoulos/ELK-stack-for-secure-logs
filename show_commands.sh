@@ -1,13 +1,20 @@
 #!/bin/bash
 
 echo "
-+---------------------------------------------------------------------------------------------
++--------------------------------------------------------------
 | For CentOS Linux 7
-+---------------------------------------------------------------------------------------------
-| Start Elasticsearch     sudo systemctl start elasticsearch.service
-+---------------------------------------------------------------------------------------------
-| Start Filebeat          sudo ./bin/filebeat -e -c filebeat.yml -d "publish"
-+---------------------------------------------------------------------------------------------
-| Start Logstash          sudo bin/logstash -f logstash.conf --config.reload.automatic
-+---------------------------------------------------------------------------------------------
++--------------------------------------------------------------
+| Commands
++--------------------------------------------------------------
+| Start Elasticsearch:
+| sudo systemctl start elasticsearch.service
+| Stop Elasticsearch:
+| sudo systemctl stop elasticsearch.service
++--------------------------------------------------------------
+| Start Filebeat:
+| sudo ./bin/filebeat -e -c filebeat.yml -d "publish"
++--------------------------------------------------------------
+| Start Logstash:
+| sudo bin/logstash -f logstash.conf --config.reload.automatic
++--------------------------------------------------------------
 "
