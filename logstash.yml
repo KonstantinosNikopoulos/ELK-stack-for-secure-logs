@@ -1,0 +1,14 @@
+# Which directory should be used by logstash and its plugins
+# for any persistent needs. Defaults to LOGSTASH_HOME/data
+path.data: /var/lib/logstash
+
+# Set the pipeline event ordering. Options are "auto" (the default), "true" or "false".
+# "auto" will  automatically enable ordering if the 'pipeline.workers' setting
+# is also set to '1'.
+# "true" will enforce ordering on the pipeline and prevent logstash from starting
+# if there are multiple workers.
+# "false" will disable any extra processing necessary for preserving ordering.
+pipeline.ordered: auto
+
+# Path to log files:
+path.logs: /var/log/logstash
