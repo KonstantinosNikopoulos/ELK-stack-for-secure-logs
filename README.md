@@ -19,11 +19,16 @@ This project is tested in CentOS Linux 7.
 
 ## Commands           
 
-Start Elasticsearch:                                         `systemctl start elasticsearch.service`                   
-Stop Elasticsearch:                                          `systemctl stop elasticsearch.service`                      
-Start Filebeat (exec in /usr/share/filebeat):                `sudo ./bin/filebeat -e -c filebeat.yml -d "publish"`                      
-Start 1st Logstash pipeline (exec in /usr/share/logstash):   `sudo bin/logstash -f logstash_1.conf --config.reload.automatic`                 
-Start 2nd Logstash pipeline (exec in /usr/share/logstash):   `sudo bin/logstash -f logstash_2.conf --config.reload.automatic`                    
+Start Elasticsearch:                                         
+`systemctl start elasticsearch.service`                   
+Stop Elasticsearch:                                          
+`systemctl stop elasticsearch.service`                      
+Start Filebeat (exec in /usr/share/filebeat):                
+`sudo ./bin/filebeat -e -c filebeat.yml -d "publish"`                      
+Start 1st Logstash pipeline (exec in /usr/share/logstash):   
+`sudo bin/logstash -f logstash_1.conf --config.reload.automatic`                 
+Start 2nd Logstash pipeline (exec in /usr/share/logstash):   
+`sudo bin/logstash -f logstash_2.conf --config.reload.automatic`                    
 
 ## Example of log file format:    
 
