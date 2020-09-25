@@ -14,8 +14,8 @@ This project is tested with rpm installation.
 /etc/elasticsearch/elasticsearch.yml               
 /etc/logstash/logstash.yml                  
 /usr/share/filebeat/filebeat.yml                 
-/usr/share/logstash/logstash_1.conf              
-/usr/share/logstash/logstash_2.conf                  
+/usr/share/logstash/pipeline_1.conf              
+/usr/share/logstash/pipeline_2.conf                  
 
 ## Commands           
 
@@ -26,9 +26,9 @@ Stop Elasticsearch:
 Start Filebeat (exec in /usr/share/filebeat):                
 `sudo ./bin/filebeat -e -c filebeat.yml -d "publish"`                      
 Start 1st Logstash pipeline (exec in /usr/share/logstash):   
-`sudo bin/logstash -f logstash_1.conf --config.reload.automatic`                 
+`sudo bin/logstash -f pipeline_1.conf --config.reload.automatic`                 
 Start 2nd Logstash pipeline (exec in /usr/share/logstash):   
-`sudo bin/logstash -f logstash_2.conf`                    
+`sudo bin/logstash -f pipeline_2.conf`                    
 
 ## Example of log file format:    
 
