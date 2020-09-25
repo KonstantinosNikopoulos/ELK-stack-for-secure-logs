@@ -7,9 +7,9 @@ Filebeat centralize logs and passes them to Logstash. Logstash has two pipelines
 ## Installation
 
 Follow the instructions from https://www.elastic.co/guide/index.html          
-This project is tested in CentOS Linux 7.                
+This project is tested with rpm installation.                
 
-## File paths (for rpm installation)
+## File paths 
 
 /etc/elasticsearch/elasticsearch.yml               
 /etc/logstash/logstash.yml                  
@@ -28,7 +28,7 @@ Start Filebeat (exec in /usr/share/filebeat):
 Start 1st Logstash pipeline (exec in /usr/share/logstash):   
 `sudo bin/logstash -f logstash_1.conf --config.reload.automatic`                 
 Start 2nd Logstash pipeline (exec in /usr/share/logstash):   
-`sudo bin/logstash -f logstash_2.conf --config.reload.automatic`                    
+`sudo bin/logstash -f logstash_2.conf`                    
 
 ## Example of log file format:    
 
