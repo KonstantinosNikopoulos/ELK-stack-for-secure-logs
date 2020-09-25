@@ -15,6 +15,7 @@ echo "
 | sudo ./bin/filebeat -e -c filebeat.yml -d "publish"
 +--------------------------------------------------------------
 | Start Logstash:
-| sudo bin/logstash -f logstash.conf --config.reload.automatic
+| sudo bin/logstash -f pipeline_1.conf --config.reload.automatic
+| sudo bin/logstash -f pipeline_2.conf --config.reload.automatic
 +--------------------------------------------------------------
 "
