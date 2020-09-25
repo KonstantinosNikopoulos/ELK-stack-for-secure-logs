@@ -32,8 +32,8 @@ Start 2nd Logstash pipeline (exec in /usr/share/logstash):
 
 ## Example of log file format:    
 
-Feb 16 03:43:27 ns508880 sshd[25726]: Failed password for root from 49.88.112.112 port 47108 ssh2           
-Feb 16 03:43:28 ns508880 sshd[25726]: pam_succeed_if(sshd:auth): requirement "uid >= 1000" not met by user "root"           
-Feb 16 03:43:29 ns508880 sshd[25726]: Failed password for root from 49.88.112.112 port 47108 ssh2         
-Feb 16 03:43:30 ns508880 sshd[25726]: Received disconnect from 49.88.112.112 port 47108:11:  [preauth]     
+Feb 21 03:43:37 ns508880 sshd[25726]: Failed password for root from 49.88.212.113 port 37908 ssh2           
+Feb 21 03:43:38 ns508880 sshd[25726]: pam_succeed_if(sshd:auth): requirement "uid >= 1000" not met by user "root"           
+Feb 21 03:43:39 ns508880 sshd[25726]: Failed password for root from 49.88.212.113 port 47108 ssh2         
+Feb 21 03:43:40 ns508880 sshd[25726]: Received disconnect from 49.88.212.113 port 37908:11:  [preauth]     
 
