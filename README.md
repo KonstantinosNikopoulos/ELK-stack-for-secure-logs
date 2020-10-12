@@ -6,8 +6,10 @@ Filebeat centralize logs and passes them to Logstash. Logstash has two pipelines
 
 ## Installation
 
-Follow the instructions from https://www.elastic.co/guide/index.html          
-This project is tested with rpm installation.                
+This project is tested with rpm installation.                       
+1) Follow the instructions from https://www.elastic.co/guide/index.html          
+2) Replace/Create below files.           
+3) Create/Move log files to /root/dataset/secure/ or change this path in /usr/share/filebeat/filebeat.yml            
 
 ## File paths 
 
