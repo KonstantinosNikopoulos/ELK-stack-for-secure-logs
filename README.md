@@ -32,6 +32,23 @@ Start 1st Logstash pipeline (exec in /usr/share/logstash):
 Start 2nd Logstash pipeline (exec in /usr/share/logstash):   
 `sudo bin/logstash -f pipeline_2.conf`                    
 
+## Instructions           
+
+Monitor:
+1) Install Filebeat, Logstash, Elasticsearch.                                                   
+2) Replace conf and yml files with files from this repo.                                             
+3) Start Elasticsearch:                                         
+`systemctl start elasticsearch.service`              
+4) Empty /usr/share/filebeat/bin/data/registry/filebeat/log.json              
+5) Start Filebeat (exec in /usr/share/filebeat):                
+`sudo ./bin/filebeat -e -c filebeat.yml -d "publish"`                      
+6) Start 1st Logstash pipeline (exec in /usr/share/logstash):   
+`sudo bin/logstash -f pipeline_1.conf --config.reload.automatic`                 
+
+Create dataset:
+1) Start 2nd Logstash pipeline (exec in /usr/share/logstash):   
+`sudo bin/logstash -f pipeline_2.conf`            
+
 ## Example of log file format:    
 
 Feb 21 03:43:37 ns508880 sshd[25726]: Failed password for root from 49.88.212.113 port 37908 ssh2           
