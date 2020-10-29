@@ -4,6 +4,12 @@ Transform secure log files with Logstash for analysis and send/get them to/from 
 
 Filebeat centralize logs and passes them to Logstash. Logstash has two pipelines. The first one gets unstructured data from Filebeat and transforms them, then sends them to Elasticsearch. The second one gets structured data from Elasticsearch. This repo contains only configuration files for Filebeat, Logstash and Elasticsearch. Other files are set in default.        
 
+## What is ELK-stack
+ELK-stack is Elasticsearch, Kibana, Beats, and Logstash stack together. It can be used to take data from any source, in any format, then search, analyze, and visualize it in real time.                  
+Elasticsearch: Elasticsearch is a highly scalable analytics engine that has full-text search capabilities. It is an open-source solution developed in Java with industry-standard capabilities. With the RESTful Web interface, it provides a distributed, multi-tenant architecture so that multiple users can use the platform at once.                         
+Logstash: This component is a centralized logging system that also helps in log enrichment and parsing. You can parse specific fields in the logs and send them to the Elasticsearch index to save the records.                                   
+Kibana: Kibana is used for data visualization and to perform analytics on the data indexed on the Elasticsearch index. You can search and view data that is stored in Elasticsearch indices. You can create interactive dashboards to visually display the analyzed data in different forms like tables, forms, maps, and charts.              
+
 ## Installation
 
 This project is tested with rpm installation.                       
